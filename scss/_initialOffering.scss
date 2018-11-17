@@ -1,0 +1,104 @@
+.initialOffering{
+    position: relative;
+    border-top: 1px dashed #607283;
+    background-image: url(../img/globe.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(600px - 1650px) center;
+    @media only screen and (max-width: 480px){
+        background-image: none;
+    }
+
+    .rightBox{
+        float: right;
+        width: 70%;
+        padding: 3em;
+        background-color: #082743;
+        border-left: 5px solid $secondary;
+        @media only screen and (max-width: 780px){
+            width: 90%;
+        }
+        @media only screen and (max-width: 500px){
+            width: 95%;
+        }
+
+        small{
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            font-weight: 600;
+            color: #657584;
+        }
+
+        h1{
+            width: 685px;
+            @media only screen and (max-width: 1060px){
+                width: 100%;
+                font-size: 2em;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+
+    .rightBoxText{
+        width: 70%;
+        padding: 3em;
+        float: right;
+        clear: both;
+        @media only screen and (max-width: 780px){
+            width: 90%;
+        }
+        @media only screen and (max-width: 500px){
+            width: 95%;
+        }
+
+        h4{
+            @media only screen and (max-width: 500px){
+                font-size: 1.2em;
+            }
+        }
+
+        h4, ul{
+            width: 780px;
+            line-height: 32px;
+            @media only screen and (max-width: 1180px){
+                width: 100%;
+            } 
+        }
+
+        ul{
+            margin-top: 3em;
+            margin-left: 5em;
+            padding: 0;
+            padding-right: 4em;
+            list-style: none;
+
+            li{
+                font-size: 1.2em;
+                position: relative;
+                @media only screen and (max-width: 500px){
+                    font-size: 1em;
+                }
+
+                &:nth-child(2){
+                    margin: 1.2em 0;
+                }
+
+                &:before {
+                    content: url(../img/icons/listStyle.png); 
+                    position: absolute;
+                    width: 20px;
+                    height: 100%;
+                    left: -1.2em;
+                    top: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        a.btn {
+            margin-top: 3em;
+        }
+    }
+}

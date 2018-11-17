@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <title>GLOBAL XCHANGE</title>
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- Custom JavaScript -->
+  <script src="js/utilities.js"></script>
+  <script src="https://unpkg.com/ccxt"></script>
+  <script src="vendor/cryptoTicker/tickers.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body id="pageTop">
+  <div id="overlay">
+    <div class="spinnerBG">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <script>
+    var overlay = document.getElementById("overlay");
+
+    window.addEventListener('load', function () {
+      overlay.style.display = 'none';
+    })
+  </script>
+
+  <header class="headNav">
+    <div class="container">
+
+      <a href="#pageTop" class="logo" onclick="javascript: globalXChange.navClose()">
+        <img src="img/logo.svg" alt="Site Logo on Nav">
+      </a>
+      <input type="checkbox" id="navToggle" class="navToggle">
+
+      <label for="navToggle" class="hamBurgerWrap" onclick="javascript: globalXChange.navOpen(this)">
+        <span class="hamBurgerTxt">Menu</span>
+        <span id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </label>
+
+      <nav>
+        <ul>
+          <li>
+            <a class="navLink" href="#hello" onclick="javascript: globalXChange.navClose()">Buy/Sell</a>
+          </li>
+          <li>
+            <a class="navLink" href="#howItWorks" onclick="javascript: globalXChange.navClose()">Market Date</a>
+          </li>
+          <li>
+            <a class="navLink" href="#features" onclick="javascript: globalXChange.navClose()">Market Trading</a>
+          </li>
+          <li>
+            <a class="navLink" href="referralProgram.html" onclick="javascript: globalXChange.navClose()">Affiliate</a>
+          </li>
+          <li class="last">
+            <a class="navLink btn signInBtn" href="loginRegister.html" onclick="javascript: globalXChange.navClose()">Sign
+              In
+            </a>
+          </li>
+          <li class="last">
+            <a class="navLink last btn" href="loginRegister.html" onclick="javascript: globalXChange.navClose()">Register</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Start of Hero image and text -->
+  <div id="hero" class="hero">
+    <video autoplay muted loop class="heroVideoWrap">
+      <source src="video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <div class="heroContent">
+        <small>GLOBAL XCHANGE</small>
+        <h1>
+          <span>BUY AND SELL</span>
+        </h1>
+        <h1>Crypto Currencies</h1>
+        <p>
+          Elite-tools for cryptocurrency traders, with rich interfaces, real-time order books and sophisticated analytical resources.
+        </p>
+        <form class="subscription" action="">
+          <input type="text" placeholder="Email Address">
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="ticker">
+      <div class="list-wrpaaer">
+        <ul id="marquee-horizontal">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="offering" id="offering">
+    <div class="container">
+      <div class="sectionIntro">
+        <img src="img/icons/sectionIntro.svg" alt="Section Intro Image">
+        <small>Introducing</small>
+        <h1><span>GLOBAL XCHANGE</span></h1>
+        <h1>Xperience | Xccelerate | Xchange</h1>
+        <p>GX is the new FX. GX is a network of centralized and decentralized financial applications which facilitate the trade of all tokenized assets. Establish yourself in the new financial system by connecting to the Global X Change.
+
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="col ifo">
+            <h2><span>Initial Fund Offering (IFO)</span></h2>
+            <p>
+              Create and invest in tokenized managed hedge funds and trustlessly share profits among contributors.
+            </p>
+            <a href="#" class="btn">Trade Now</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="col iao">
+            <h2><span>Initial Algorithm Offering (IAO)</span></h2>
+            <p>
+              Trustlessly invest in sophisticated tokenized trading algorithms.
+            </p>
+            <a href="#" class="btn">Trade Now</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="col otc">
+            <h2><span>Over the Counter Exchanges (OTC)</span></h2>
+            <p>
+              Privately buy and sell cryptocurrency privately off the exchange in-person at a branch, 24 hours over the phone, or online.
+            </p>
+            <a href="#" class="btn">Trade Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="privacySecurity" id="privacySecurity">
+    <div class="container">
+      <div class="sectionIntro">
+        <img src="img/icons/sectionIntro.svg" alt="Section Intro Image">
+        <small>LOREM IPSUM</small>
+        <h1><span>PRIVACY & SECURITY</span></h1>
+        <p>
+          Keep your trades private through our over the counter exchange. Submit trades online, via phone, or in-person at any one
+          of our 15 global Nvest branches.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-4 personCol">
+          <div class="col">
+            <div class="textWrap person">
+              <img src="img/icons/person.svg" alt="in person image">
+              <h1>In-Person</h1>
+              <a href="#" class="btn">Trade in-person</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 phoneCol">
+          <div class="col">
+            <div class="textWrap phone">
+              <img src="img/icons/phone.svg" alt="by phone image">
+              <h1>By Phone</h1>
+              <a href="#" class="btn">Trade by phone</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 onlineCol">
+          <div class="col">
+            <div class="textWrap online">
+              <img src="img/icons/online.svg" alt="online image">
+              <h1>Online</h1>
+              <a href="#" class="btn">Trade online</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <!-- <div class="container"> -->
+    <div class="row">
+      <div class="col-6">
+        <div class="col">
+          <img src="img/largeRange.svg" alt="Large Range image">
+          <h1>Large range of</h1>
+          <p>
+            derivative products available: Futures, Options, and Swaps. OTC derivatives supported.
+          </p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col noBorder">
+          <img src="img/GlobalXChangeOffers.svg" alt="Global Xchange offers image">
+          <h1>Global Xchange offers</h1>
+          <p>
+            elite-tools for cryptocurrency traders, featuring rich interfaces, real-time order books, and sophisticated analytical resources.
+          </p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col">
+          <img src="img/security.svg" alt="Security image">
+          <h1>Security</h1>
+          <p>
+            is a top priority. Global Xchange incorporates multiple layers of control and leverages the most reliable security technologies
+            to protect your funds.
+          </p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col noBorder">
+          <img src="img/ourPlatform.svg" alt="Our platform image">
+          <h1>Our platform</h1>
+          <p>
+            is fast with trades that execute in real-time. Build effective trading algorithms, charts, and tools using our API.
+          </p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col noBorderBottom">
+          <img src="img/securityAudits.svg" alt="Security audits image">
+          <h1>Security audits</h1>
+          <p>
+            We schedule regular financial and IT security audits. Additionally, 95% of our customer assets are stored offline to further
+            protect customer funds.
+          </p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col noBorder noBorderBottom">
+          <img src="img/leverage.svg" alt="4x leverage image">
+          <h1>4x leverage</h1>
+          <p>
+            Trade with up to 4x leverage through our margin funding platform. Maximize your returns on smart trades at reasonable rates
+            incorporated seamlessly into our platform.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="col">
+          <div class="col noBorder noBorderBottom">
+            <img src="img/zeroFees.svg" alt="ZERO FEES image">
+            <h1>ZERO FEES</h1>
+            <p>
+              Global Xchange charges ZERO FEES through our online exchange. Get the most out of your investment with no maker or taker
+              fees.
+            </p>
+            <a href="#" class="btn">Start Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <section class="initialOffering" id="initialOffering">
+    <div class="rightBox">
+      <small>Global Xchange</small>
+      <h1>
+        <span>Initial Fund Offering </span>
+        Unlock the power of the most skilled traders
+      </h1>
+    </div>
+
+    <div class="rightBoxText">
+      <h4>
+        An IFO allows hedge funds to be created and crowded funded through a token offering with all raised funds secured trustlessly
+        through smart contracts. Effective fund managers are rewarded a percentage of the fund’s profits.
+      </h4>
+
+      <ul>
+        <li>
+          Through the use of the Global Xchange Platform, investors can invest in fund managers trustlessly to maximize their returns.
+        </li>
+        <li>
+          Profits are distributed proportionally through token ownership. Funds are completely secure and can only be removed through
+          distributions to token holders.
+        </li>
+        <li>
+          IFO tokens are tradeable, providing liquidity to investors and enable a robust derivatives market.
+        </li>
+      </ul>
+
+      <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="rightBox">
+      <small>Global Xchange</small>
+      <h1>
+        <span>Initial Algorithm Offering</span>
+        Make trading algorithms work for you.
+      </h1>
+    </div>
+
+    <div class="rightBoxText">
+      <h4>
+        Instead of investing in a fund manager like an IFO, an IAO allows you to investment in a publicly viewable algorithm in exchange
+        for tokens. When sufficient funding are raised, the algorithm executes and runs for a predetermined amount of time.
+        At the end of the period funds are divided among token holders with a percentage given to the algorithm creator.
+      </h4>
+
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="whiteLabel" id="whiteLabel">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="col text">
+            <small>Lorem Ipsum</small>
+            <h1>White Label API</h1>
+            <h3>Like our exchange? Rebrand it as your own using our White Label exchange service. Keep the features and customize
+              it to your platform. </h3>
+            <h5>Contact</h5>
+            <h5>info@globalxchange.com</h5>
+            <h5>for more information</h5>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="col img">
+            <!-- <img src="img/whiteLabel.png" alt=""> -->
+            <video autoplay muted loop class="whiteLabelVideo">
+              <source src="video/WhiteLabel.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Buy Bitcoins</a></li>
+              <li><a href="#">Buy Ethereum</a></li>
+              <li><a href="#">Buy DASH</a></li>
+              <li><a href="#">BTC to USD</a></li>
+              <li><a href="#">Sell Bitcoins</a></li>
+              <li><a href="#">Bitcoin Trading</a></li>
+              <li><a href="#">Margin Trading</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="col">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Payment Options</a></li>
+              <li><a href="#">Fee Schedule</a></li>
+              <li><a href="#">Getting Started</a></li>
+              <li><a href="#">Identity Verification Guide</a></li>
+              <li><a href="#">Card Verification Guide</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="col">
+            <h3>Tools</h3>
+            <ul>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Bitcoin Calculator</a></li>
+              <li><a href="#">Bitcoin Price Widget</a></li>
+              <li><a href="#">Mobile App</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Donations</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="col">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Legal & Security</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Centre</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p>Copyright © GlobalXChange All Right Reserved </p>
+    </div>
+  </footer>
+</body>
+
+</html>

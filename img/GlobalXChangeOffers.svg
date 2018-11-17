@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.673 180.976">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d64228;
+      }
+
+      .cls-2 {
+        fill: #f16c54;
+      }
+
+      .cls-3 {
+        fill: #e7543b;
+      }
+
+      .cls-4 {
+        opacity: 0.2;
+      }
+
+      .cls-5 {
+        opacity: 0.6;
+      }
+    </style>
+  </defs>
+  <g id="Group_2350" data-name="Group 2350" transform="translate(-467 -2345)">
+    <g id="XMLID_1_" transform="translate(627 2345)">
+      <path id="XMLID_4_" class="cls-1" d="M111.194,20.3,35.4,64.386v22.8l75.577-43.652Z" transform="translate(41.48 23.786)"/>
+      <path id="XMLID_3_" class="cls-2" d="M152.673,44.086,76.88,88.173,0,43.435,76.228,0Z"/>
+      <path id="XMLID_2_" class="cls-3" d="M0,20,76.88,64.738v22.8L0,43.455Z" transform="translate(0 23.435)"/>
+    </g>
+    <g id="XMLID_1_2" data-name="XMLID_1_" class="cls-4" transform="translate(467 2345)">
+      <path id="XMLID_4_2" data-name="XMLID_4_" class="cls-1" d="M111.194,20.3,35.4,64.386v22.8l75.577-43.652Z" transform="translate(41.48 23.786)"/>
+      <path id="XMLID_3_2" data-name="XMLID_3_" class="cls-2" d="M152.673,44.086,76.88,88.173,0,43.435,76.228,0Z"/>
+      <path id="XMLID_2_2" data-name="XMLID_2_" class="cls-3" d="M0,20,76.88,64.738v22.8L0,43.455Z" transform="translate(0 23.435)"/>
+    </g>
+    <g id="XMLID_1_3" data-name="XMLID_1_" class="cls-5" transform="translate(547 2415)">
+      <path id="XMLID_4_3" data-name="XMLID_4_" class="cls-1" d="M111.194,20.3,35.4,64.386v22.8l75.577-43.652Z" transform="translate(41.48 23.786)"/>
+      <path id="XMLID_3_3" data-name="XMLID_3_" class="cls-2" d="M152.673,44.086,76.88,88.173,0,43.435,76.228,0Z"/>
+      <path id="XMLID_2_3" data-name="XMLID_2_" class="cls-3" d="M0,20,76.88,64.738v22.8L0,43.455Z" transform="translate(0 23.435)"/>
+    </g>
+  </g>
+</svg>

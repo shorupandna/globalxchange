@@ -1,0 +1,59 @@
+.whiteLabel{
+    .row{
+        .col-6{
+            @media only screen and (max-width: 900px){
+                width: 100%;
+            };
+            .col.text{
+                padding: 0 2em;
+                @media only screen and (max-width: 1050px){
+                    padding: 5vw 0;
+                }
+
+                small{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 4px;
+                    color: #657584;
+                }
+
+                h1{
+                    font-weight: 800;
+                    @media only screen and (max-width: 1220px){
+                        font-size: 2.5em;
+                    }
+                }
+
+                h3{
+                    margin: 1em 0;
+                    font-size: 2em;
+                    line-height: 38px;
+                    @media only screen and (max-width: 1220px){
+                        font-size: 1.5em;
+                        margin: 0.5em 0;
+                        line-height: 30px;
+                    }
+                    @media only screen and (max-width: 1040px){
+                        font-size: 1em;
+                    }
+                }
+
+                h5{
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    line-height: 30px;
+                    @media only screen and (max-width: 1220px){
+                        font-size: 1em;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            .col.img{
+                .whiteLabelVideo{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

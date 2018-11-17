@@ -1,0 +1,163 @@
+*,
+::before,
+::after {
+    -webkit-transition: all 255ms ease-in-out;
+    transition: all 255ms ease-in-out;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background-color: #031F3A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+    line-height: 1;
+    margin: 0;
+    font-weight: 100;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1, .h1 {
+    font-size: 3.6em;
+}
+
+h2, .h2 {
+    font-size: 2.5em;
+}
+
+h3, .h3 {
+    font-size: 1.75em;
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+}
+
+h5, .h5 {
+    font-size: 1.25em;
+}
+
+h6, .h6 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.75;
+    margin: 0.5em 0;
+    color: #FFFFFF;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.clearFix:before, .clearFix:after {
+    content: "";
+    display: table;
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media only screen and (max-width: 1600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.containerFluid {
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    padding: 3.5em 0;
+    overflow: hidden;
+}
+
+.section {
+    padding: 6em 0 3.5em 0;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #000000;
+    resize: vertical;
+}
+
+    form input:placeholder, form select:placeholder, form textarea:placeholder {
+        color: #FFFFFF;
+    }
+
+form .btn {
+    padding: 0.8em 2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #BD1233;
+    border-radius: 5px;
+    background-color: #BD1233;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d81025;
+    color: #ffffff;
+}
+
+    .btn2 {
+        background-color: transparent;
+        color: #BD1233;
+    }
+
+a {
+    text-decoration: none;
+    color: #BD1233;
+}
+
+    a:hover {
+        color: #ced4da;
+    }
+
+svg {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+.products{
+    background-image: url(../img/map.svg);
+    background-repeat: 	no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .row{
+        .col-6, .col-12{
+            @media only screen and (max-width: 600px){
+                width: 100%;
+            }
+            .col{
+                text-align: center;
+                min-height: 550px;
+                padding: 10%;
+                border-right: 1px dashed $light;
+                border-bottom: 1px dashed $light;
+                @media only screen and (max-width: 980px){
+                    min-height: 400px;
+                }
+
+                @media only screen and (max-width: 600px){
+                    border: none;
+                    padding: 3em 1em;
+                    min-height: auto;
+
+                    &:after{
+                        content: '';
+                        width: 80%;
+                        height: 1px;;
+                        margin: 0 auto;
+                        background-color: #354c61;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                    }
+                }
+                &.noBorder{
+                    border-right: none;
+                }
+
+                &.noBorderBottom{
+                    border-bottom: none;
+                }
+
+                img{
+                    width: 200px;
+                    margin-bottom: 1em;;
+                }
+
+                h1{
+                    font-weight: 700;
+                    @media only screen and (max-width: 980px){
+                        font-size: 2em;
+                    }
+                }
+                
+                p{
+                    font-size: 1.5em;
+                    @media only screen and (max-width: 980px){
+                        font-size: 1em;
+                    }
+                    @media only screen and (max-width: 600px){
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        
+        .col-12{
+            .col{
+                padding: 1em 22%;
+                border: none;
+                min-height: auto;
+                @media only screen and (max-width: 600px){
+                    padding: 1em;
+
+                    &:after{
+                        display: none;
+                    }
+                }
+
+                a.btn{
+                    font-size: 2em;
+                    font-weight: 600;
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+}

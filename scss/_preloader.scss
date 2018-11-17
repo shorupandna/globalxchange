@@ -1,0 +1,50 @@
+.spinnerBG{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    background-image: url(../img/favicon/favicon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.spinner{
+    width: 80px;
+    height: 80px;
+    border: 5px solid #f3f3f3;
+    border-top:6px solid $secondary;
+    border-radius: 100%; 
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    animation: spin 1500ms infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+  height:100%;
+  width:100%;
+  background: $primary;
+  position:fixed;
+  left:0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+ }
